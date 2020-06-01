@@ -56,3 +56,10 @@ export const Button = styled.button`
   );
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
 `;
+
+export const ButtonLight = styled(Button)`
+  color: ${colors.primary};
+  border: 2px solid ${colors.primary};
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
+  background: ${colors.white};
+`;
