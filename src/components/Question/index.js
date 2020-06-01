@@ -9,15 +9,13 @@ import { Button } from "../../styles";
 export default function Home({ steps }) {
   const history = useHistory();
 
-  const [actualStep, setActualStep] = useState(1);
+  const [actualStep, setActualStep] = useState(0);
   const [value, setValue] = useState("");
 
   function nextStep() {
     if (actualStep + 1 < steps.length) {
-      console.log("proxima pergunta");
       setActualStep(actualStep + 1);
     } else {
-      console.log("acabou pergunta");
       history.push("/resultado");
     }
   }
