@@ -63,3 +63,7 @@ export const ButtonLight = styled(Button)`
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
   background: ${colors.white};
 `;
+
+export const ButtonLightCustom = styled(ButtonLight)`
+  margin-top: 20px;
+`;

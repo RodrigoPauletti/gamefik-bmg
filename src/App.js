@@ -12,6 +12,8 @@ import {
 
 import Home from "./pages/Home";
 import Results from "./pages/Results";
+import Faq from "./pages/Faq";
+
 import { GlobalStyle } from "./styles";
 
 library.add(faUserCircle, faAngleLeft, faAngleRight, faAngleDown);
@@ -24,6 +26,9 @@ function App() {
       </Route>
       <Route exact path="/resultado">
         <Results />
+      </Route>
+      <Route exact path="/faq">
+        <Faq />
       </Route>
       <GlobalStyle />
     </BrowserRouter>

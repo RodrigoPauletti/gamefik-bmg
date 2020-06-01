@@ -1,13 +1,17 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, useHistory } from "react-router-dom";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 import Header from "../../components/Header";
 import Card from "../../components/Card";
 
 import { ResultsContainer } from "./styles";
 import { Button, ButtonLight } from "../../styles";
+import { QuestionContainer } from "../../components/Question/styles";
 
 export default function Results() {
+  const history = useHistory();
+
   return (
     <React.Fragment>
       <Header />
@@ -60,6 +64,14 @@ export default function Results() {
           </Link>
           <Button>Investir já</Button>
         </ResultsContainer>
+        <QuestionContainer>
+          <button
+            className="change-step back-step"
+            onClick={() => history.push("/")}
+          >
+            <FontAwesomeIcon icon="angle-left" />
+          </button>
+        </QuestionContainer>
       </div>
     </React.Fragment>
   );
